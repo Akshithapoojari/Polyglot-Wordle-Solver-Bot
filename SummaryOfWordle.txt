@@ -1,0 +1,11 @@
+This Python script implements a Wordle-solving bot.
+
+It contains two main classes:
+1.  `MockWordleGame`: This class simulates a game of Wordle. It has a hidden answer and provides feedback ("Green", "Yellow", "Red") for each guess made by the bot.
+2.  `WordleBot`: This is the core of the script. The bot plays the Wordle game by:
+    *   Loading a list of 5-letter words from an external file (`words_5.txt`).
+    *   Making an initial guess.
+    *   Using the feedback from the game to filter its internal word list, eliminating words that don't match the feedback criteria.
+    *   Choosing the next best word from the narrowed-down list and repeating the process.
+
+The script runs in a loop until the bot either correctly guesses the word or exceeds the maximum number of tries. The main execution block demonstrates how to create a game instance with a specific answer and have the bot solve it.
